@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Julien M.",
+    "place": "Awans",
+    "rating": 5,
+    "service": "Pack Intérieur + Extérieur",
+    "text": "Voiture comme neuve, intérieur impeccable et il s'est déplacé devant chez moi. Photos avant/après bluffantes. Je recommande à 100%.",
+    "date": "2025-11-15T10:00:00.000Z"
+  },
+  {
+    "name": "Sophie D.",
+    "place": "Liège",
+    "rating": 5,
+    "service": "Canapé d'angle",
+    "text": "Mon canapé d'angle avait perdu sa couleur, le résultat après l'injection-extraction est incroyable. Ponctuel et très soigneux.",
+    "date": "2025-10-28T09:30:00.000Z"
+  },
+  {
+    "name": "Garage Vresse",
+    "place": "Concessionnaire",
+    "rating": 5,
+    "service": "Offres concessionnaires",
+    "text": "On lui confie nos véhicules d'occasion avant mise en vente. Qualité constante, tarifs dégressifs, facturation à 30 jours. Partenaire fiable.",
+    "date": "2025-09-12T14:00:00.000Z"
+  },
+  {
+    "name": "Nadia B.",
+    "place": "Ans",
+    "rating": 5,
+    "service": "Vitres & châssis",
+    "text": "Vitres et châssis nickel, même les velux en hauteur. Tarif annoncé respecté au centime près. Paiement après, ça rassure.",
+    "date": "2025-08-20T11:00:00.000Z"
+  },
+  {
+    "name": "Marc V.",
+    "place": "Flémalle",
+    "rating": 4,
+    "service": "Pack Detailing",
+    "text": "Polissage carrosserie qui a fait disparaître les micro-rayures. Du travail de pro, ma berline a retrouvé son éclat d'origine.",
+    "date": "2025-07-05T16:00:00.000Z"
+  },
+  {
+    "name": "Élodie T.",
+    "place": "Awans",
+    "rating": 5,
+    "service": "Pack Maison Complet",
+    "text": "Tout en une fois : vitres, canapé et le jardin taillé. Pratique, efficace et beaucoup moins cher en pack. Je rebooke au printemps.",
+    "date": "2025-06-18T08:30:00.000Z"
+  }
+]

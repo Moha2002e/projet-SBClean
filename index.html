@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SB Clean – Nettoyage à domicile à Awans | Région de Liège</title>
+  <meta name="description" content="SB Clean, service de nettoyage à domicile à Awans (Liège). Voiture, canapé, matelas, vitres, terrasse, jardin. Déplacement inclus, paiement après résultat. Réservation en ligne." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sbclean.be/" />
+  <meta property="og:title" content="SB Clean – Nettoyage à domicile à Awans | Liège" />
+  <meta property="og:description" content="Nettoyage voiture, canapé, vitres et jardin à Awans. On vient chez vous, résultat garanti. Réservation en ligne." />
+  <meta property="og:url" content="https://sbclean.be" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_BE" />
+  <meta name="google-site-verification" content="a9Cc-TI3eeJLHKwvm6klOHoZsllNiY5-z3zgF1Idtfc" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700;800&family=Manrope:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f2e25;
+      --bg: #f3f8f5;
+      --bg2: #e9f3ee;
+      --card: #ffffff;
+      --green: #10876a;
+      --green-d: #0c6b54;
+      --green-l: #e3f4ec;
+      --mint: #7fd1b0;
+      --sky: #2f93c9;
+      --sky-l: #e6f3fa;
+      --sun: #f2b134;
+      --muted: #557066;
+      --faint: #8aa399;
+      --line: #dde9e3;
+      --r: 22px;
+      --maxw: 1180px;
+      --sh: 0 14px 40px -22px rgba(16, 135, 106, .45);
+      --sh-sm: 0 6px 20px -12px rgba(16, 135, 106, .4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    button {
+      font-family: inherit
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+      overflow-x: hidden
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .dn {
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.07;
+      letter-spacing: -.02em;
+      font-weight: 700
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 28px
+    }
+
+    .page {
+      display: none;
+      animation: fade .5s ease
+    }
+
+    .page.active {
+      display: block
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 12.5px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--green);
+      background: var(--green-l);
+      padding: 7px 14px;
+      border-radius: 30px
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(243, 248, 245, .82);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      height: 78px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      cursor: pointer
+    }
+
+    .mono {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(150deg, var(--green), var(--mint));
+      color: #fff;
+      font-family: 'Outfit';
+      font-weight: 800;
+      font-size: 17px;
+      box-shadow: 0 8px 18px -8px rgba(16, 135, 106, .7)
+    }
+
+    .logo b {
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 21px
+    }
+
+    .logo b span {
+      color: var(--green)
+    }
+
+    .links {
+      display: flex;
+      gap: 4px;
+      margin-left: auto
+    }
+
+    .links a {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--muted);
+      padding: 9px 15px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: .15s
+    }
+
+    .links a:hover {
+      background: var(--bg2);
+      color: var(--ink)
+    }
+
+    .links a.on {
+      background: var(--green);
+      color: #fff
+    }
+
+    .btn {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 15px;
+      border: 0;
+      cursor: pointer;
+      padding: 12px 22px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: .2s
+    }
+
+    .btn-pri {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 12px 24px -12px rgba(16, 135, 106, .9)
+    }
+
+    .btn-pri:hover {
+      background: var(--green-d);
+      transform: translateY(-2px)
+    }
+
+    .btn-ghost {
+      background: var(--card);
+      color: var(--ink);
+      box-shadow: var(--sh-sm)
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-2px)
+    }
+
+    .accent {
+      color: var(--green);
+      font-style: normal;
+      font-weight: 800
+    }
+
+    .btn-pri.big {
+      padding: 14px 26px;
+      font-size: 16.5px
+    }
+
+    .btn-sky {
+      background: var(--sky);
+      color: #fff
+    }
+
+    .nav .btn {
+      margin-left: 14px
+    }
+
+    .burger {
+      display: none;
+      margin-left: auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      width: 44px;
+      height: 44px;
+      font-size: 18px;
+      cursor: pointer
+    }
+
+    .hero {
+      padding: 68px 0 54px
+    }
+
+    .hgrid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 50px;
+      align-items: center
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 5.4vw, 72px);
+      font-weight: 800;
+      margin: 22px 0 22px
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--green)
+    }
+
+    .hero p.lead {
+      font-size: 18.5px;
+      color: var(--muted);
+      max-width: 510px
+    }
+
+    .hcta {
+      display: flex;
+      gap: 14px;
+      margin-top: 30px;
+      flex-wrap: wrap
+    }
+
+    .chips {
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+      flex-wrap: wrap
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 9px 16px;
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 13.5px;
+      box-shadow: var(--sh-sm)
+    }
+
+    .chip .tk {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--green-l);
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-size: 11px;
+      font-weight: 800
+    }
+
+    .ph {
+      position: relative;
+      border-radius: var(--r);
+      overflow: hidden;
+      background: repeating-linear-gradient(135deg, #fff 0 16px, var(--bg2) 16px 32px);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      border: 1px solid var(--line)
+    }
+
+    .ph .lbl {
+      font-family: 'Outfit', monospace;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: .04em;
+      color: var(--muted);
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border: 1.5px dashed var(--mint);
+      border-radius: 30px;
+      background: #fff
+    }
+
+    .hero-ph {
+      aspect-ratio: 4/5;
+      box-shadow: var(--sh);
+      background: repeating-linear-gradient(135deg, #eafaf3 0 16px, #d6f0e4 16px 32px)
+    }
+
+    .float {
+      position: absolute;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 13px 16px;
+      box-shadow: var(--sh);
+      display: flex;
+      align-items: center;
+      gap: 11px
+    }
+
+    .float.a {
+      top: 18px;
+      right: -16px
+    }
+
+    .float.b {
+      bottom: 20px;
+      left: -18px
+    }
+
+    .float .ic {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      flex: none
+    }
+
+    .float.a .ic {
+      background: var(--green-l);
+      color: var(--green)
+    }
+
+    .float.b .ic {
+      background: var(--sky-l);
+      color: var(--sky)
+    }
+
+    .float .ic svg {
+      width: 19px;
+      height: 19px
+    }
+
+    .float small {
+      display: block;
+      color: var(--faint);
+      font-size: 11px
+    }
+
+    .float b {
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 14px
+    }
+
+    .strip {
+      background: var(--card);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden
+    }
+
+    .strip .row {
+      display: flex;
+      gap: 42px;
+      padding: 16px 0;
+      white-space: nowrap;
+      animation: sl 26s linear infinite
+    }
+
+    .strip .row span {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--muted);
+      display: inline-flex;
+      gap: 10px;
+      align-items: center
+    }
+
+    .strip .row span i {
+      color: var(--green);
+      font-style: normal
+    }
+
+    @keyframes sl {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    section.blk {
+      padding: 74px 0
+    }
+
+    .shead {
+      max-width: 660px;
+      margin-bottom: 42px
+    }
+
+    .shead h2 {
+      font-size: clamp(30px, 3.8vw, 46px);
+      margin: 14px 0 14px
+    }
+
+    .shead p {
+      color: var(--muted);
+      font-size: 17px
+    }
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center
+    }
+
+    .dgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    .dcard {
+      background: var(--card);
+      border-radius: var(--r);
+      overflow: hidden;
+      box-shadow: var(--sh-sm);
+      transition: .22s;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--line)
+    }
+
+    .dcard:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--sh)
+    }
+
+    .dcard .dimg {
+      aspect-ratio: 16/10
+    }
+
+    .dcard .dimg img:hover { transform: scale(1.04); }
+
+    .dcard .dbody {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .dcard .more {
+      margin-top: auto;
+      padding-top: 16px;
+    }
+
+    .dtag {
+      display: inline-flex;
+      align-items: center;
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--green);
+      padding: 5px 12px;
+      border-radius: 30px;
+    }
+
+
+    .dcard h3 {
+      font-size: 22px;
+      margin: 9px 0 10px
+    }
+
+    .dcard p {
+      color: var(--muted);
+      font-size: 14.5px;
+      margin-bottom: 16px
+    }
+
+    .dcard ul {
+      list-style: none;
+      display: grid;
+      gap: 8px
+    }
+
+    .dcard li {
+      font-size: 14px;
+      display: flex;
+      gap: 9px;
+      align-items: center
+    }
+
+    .dcard li .tk {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--green-l);
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-size: 11px;
+      font-weight: 800;
+      flex: none
+    }
+
+    .dcard .more {
+      margin-top: 18px;
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--green);
+      cursor: pointer;
+      display: inline-flex;
+      gap: 6px
+    }
+
+    .args {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px
+    }
+
+    .arg {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 20px;
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line)
+    }
+
+    .arg .ic {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      flex: none;
+      display: grid;
+      place-items: center;
+      background: var(--green-l);
+      color: var(--green)
+    }
+
+    .arg .ic svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .arg b {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 15px
+    }
+
+    .greenband {
+      background: linear-gradient(155deg, var(--green), var(--green-d));
+      border-radius: 28px;
+      padding: 54px 44px;
+      color: #fff;
+      position: relative;
+      overflow: hidden
+    }
+
+    .greenband::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .07)
+    }
+
+    .greenband .eyebrow {
+      background: rgba(255, 255, 255, .15);
+      color: #fff
+    }
+
+    .greenband h2 {
+      color: #fff
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+      position: relative
+    }
+
+    .step {
+      padding: 24px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .16)
+    }
+
+    .step .n {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--green);
+      font-family: 'Outfit';
+      font-weight: 800;
+      font-size: 17px;
+      display: grid;
+      place-items: center
+    }
+
+    .step h4 {
+      color: #fff;
+      font-size: 17px;
+      margin: 14px 0 7px
+    }
+
+    .step p {
+      color: rgba(255, 255, 255, .82);
+      font-size: 13.5px
+    }
+
+    .tgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px
+    }
+
+    .tcard {
+      padding: 26px;
+      border-radius: var(--r);
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      gap: 14px
+    }
+
+    .stars {
+      display: flex;
+      gap: 3px;
+      color: var(--sun)
+    }
+
+    .stars svg {
+      width: 17px;
+      height: 17px
+    }
+
+    .tcard p {
+      font-size: 15px;
+      color: var(--ink)
+    }
+
+    .tcard .who {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: auto
+    }
+
+    .tcard .av {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      flex: none;
+      display: grid;
+      place-items: center;
+      background: var(--green-l);
+      color: var(--green);
+      font-family: 'Outfit';
+      font-weight: 700
+    }
+
+    .tcard .who b {
+      display: block;
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 15px
+    }
+
+    .tcard .who small {
+      color: var(--faint);
+      font-size: 12.5px
+    }
+
+    .svc {
+      font-size: 10.5px;
+      font-family: 'Outfit';
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--green);
+      background: var(--green-l);
+      border-radius: 20px;
+      padding: 4px 10px;
+      margin-left: auto
+    }
+
+    .band {
+      border-radius: 28px;
+      background: var(--card);
+      padding: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      flex-wrap: wrap;
+      box-shadow: var(--sh);
+      border: 1px solid var(--line)
+    }
+
+    .band h2 {
+      font-size: clamp(26px, 3.2vw, 40px)
+    }
+
+    .band p {
+      color: var(--muted);
+      margin-top: 8px
+    }
+
+    .seg {
+      display: inline-flex;
+      gap: 5px;
+      padding: 6px;
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line);
+      margin-bottom: 34px;
+      flex-wrap: wrap
+    }
+
+    .seg button {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 14px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 11px 18px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: .15s
+    }
+
+    .seg button.on {
+      background: var(--green);
+      color: #fff
+    }
+
+    .tabwrap>div {
+      display: none
+    }
+
+    .tabwrap>div.show {
+      display: block;
+      animation: fade .35s
+    }
+
+    .ptable {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--card);
+      border-radius: var(--r);
+      overflow: hidden;
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line)
+    }
+
+    .ptable th,
+    .ptable td {
+      padding: 16px 18px;
+      text-align: center;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .ptable thead th {
+      background: var(--green-l);
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 13.5px;
+      color: var(--green-d)
+    }
+
+    .ptable th:first-child,
+    .ptable td:first-child {
+      text-align: left
+    }
+
+    .ptable tbody tr:last-child td {
+      border-bottom: 0
+    }
+
+    .ptable tbody tr:hover {
+      background: var(--bg2)
+    }
+
+    .ptable .nm {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 15px
+    }
+
+    .ptable .nt {
+      display: block;
+      font-size: 12px;
+      color: var(--faint);
+      font-weight: 400;
+      font-family: 'Plus Jakarta Sans'
+    }
+
+    .ptable td.price {
+      font-family: 'Outfit';
+      font-weight: 700
+    }
+
+    .ptable tr.feat {
+      background: var(--green-l)
+    }
+
+    .ptable tr.prem td.price {
+      color: var(--green)
+    }
+
+    .tag-pop {
+      display: inline-block;
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--green);
+      background: var(--green-l);
+      border-radius: 20px;
+      padding: 2px 9px;
+      margin-left: 8px;
+      vertical-align: middle
+    }
+
+    .listcols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px
+    }
+
+    .plist {
+      border-radius: var(--r);
+      overflow: hidden;
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line)
+    }
+
+    .plist h4 {
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 20px;
+      background: var(--green-l);
+      color: var(--green-d)
+    }
+
+    .plist .li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 20px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14.5px
+    }
+
+    .plist .li:last-child {
+      border-bottom: 0
+    }
+
+    .plist .li:hover {
+      background: var(--bg2)
+    }
+
+    .plist .li b {
+      font-family: 'Outfit';
+      font-weight: 700;
+      color: var(--green)
+    }
+
+    .packgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px
+    }
+
+    .pack {
+      position: relative;
+      padding: 26px;
+      border-radius: var(--r);
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      transition: .2s
+    }
+
+    .pack:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--sh)
+    }
+
+    .pack.best {
+      border: 2px solid var(--green);
+      box-shadow: var(--sh)
+    }
+
+    .ribbon {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: var(--green);
+      color: #fff;
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: 5px 13px;
+      border-radius: 20px
+    }
+
+    .pack h4 {
+      font-size: 19px
+    }
+
+    .pack .ct {
+      font-size: 13px;
+      color: var(--muted);
+      min-height: 36px
+    }
+
+    .pack .pr {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-top: auto
+    }
+
+    .pack .now {
+      font-family: 'Outfit';
+      font-weight: 800;
+      font-size: 32px;
+      color: var(--green)
+    }
+
+    .pack .was {
+      font-size: 15px;
+      color: var(--faint);
+      text-decoration: line-through
+    }
+
+    .pack .save {
+      margin-left: auto;
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--sun);
+      background: #fdf4e2;
+      border-radius: 20px;
+      padding: 3px 10px
+    }
+
+    .tscroll {
+      overflow: hidden;
+      position: relative;
+      padding: 4px 0
+    }
+
+    .tscroll .trow {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      animation: sl 38s linear infinite
+    }
+
+    .tscroll .trow:hover {
+      animation-play-state: paused
+    }
+
+    .tscroll .tcard {
+      width: 340px;
+      flex: none
+    }
+
+    .reviews-scroll {
+      max-height: 430px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 8px;
+      display: block;
+      scrollbar-width: thin;
+      scrollbar-color: var(--mint) transparent
+    }
+
+    .reviews-scroll::-webkit-scrollbar {
+      width: 8px
+    }
+
+    .reviews-scroll::-webkit-scrollbar-thumb {
+      background: var(--mint);
+      border-radius: 999px
+    }
+
+    .reviews-scroll .tcard {
+      width: 100%;
+      flex: none
+    }
+
+    .reviews-scroll .trow {
+      display: grid;
+      gap: 14px;
+      width: 100%;
+      animation: none
+    }
+
+    #reviews-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .car-price-list {
+      display: grid;
+      gap: 7px;
+      margin-top: auto
+    }
+
+    .car-pl-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: var(--bg2);
+      font-size: 14px
+    }
+
+    .car-pl-row b {
+      font-family: 'Outfit';
+      font-weight: 700;
+      color: var(--green)
+    }
+
+    .pack.prem {
+      border: 2px solid var(--sun)
+    }
+
+    .pack.prem .car-pl-row b {
+      color: var(--sun)
+    }
+
+    .proband {
+      border-radius: 28px;
+      padding: 42px;
+      background: var(--card);
+      box-shadow: var(--sh);
+      border: 1px solid var(--line)
+    }
+
+    .protop {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 26px 0
+    }
+
+    .protop .po {
+      padding: 20px;
+      border-radius: 16px;
+      background: var(--green-l)
+    }
+
+    .protop .po b {
+      display: block;
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 8px
+    }
+
+    .protop .po span {
+      color: var(--green);
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 14px
+    }
+
+    .vol {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px
+    }
+
+    .vol .v {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 18px;
+      border-radius: 14px;
+      background: var(--bg2)
+    }
+
+    .vol .v b {
+      font-family: 'Outfit';
+      font-weight: 700;
+      color: var(--green)
+    }
+
+    .cgrid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 40px
+    }
+
+    .formcard {
+      padding: 32px;
+      border-radius: var(--r);
+      background: var(--card);
+      box-shadow: var(--sh);
+      border: 1px solid var(--line)
+    }
+
+    .field {
+      margin-bottom: 16px
+    }
+
+    .field label {
+      display: block;
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 7px
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 15px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 13px 15px;
+      transition: .15s;
+      color: var(--ink)
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--green);
+      background: #fff;
+      box-shadow: 0 0 0 4px var(--green-l)
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 110px
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    .cinfo .ci {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      padding: 18px;
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line);
+      margin-bottom: 14px
+    }
+
+    .cinfo .ci .ic {
+      width: 46px;
+      height: 46px;
+      border-radius: 13px;
+      flex: none;
+      display: grid;
+      place-items: center;
+      background: var(--green-l);
+      color: var(--green)
+    }
+
+    .cinfo .ci .ic svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .cinfo .ci small {
+      color: var(--faint);
+      font-size: 12.5px;
+      display: block
+    }
+
+    .cinfo .ci b {
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 16px
+    }
+
+    .map {
+      aspect-ratio: 16/9;
+      margin-top: 4px
+    }
+
+    .ok {
+      display: none;
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--green-l);
+      border: 1px solid var(--mint);
+      color: var(--green-d);
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 14.5px;
+      margin-bottom: 16px
+    }
+
+    .ok.show {
+      display: block;
+      animation: fade .35s
+    }
+
+    .rv-star {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      transition: transform .15s, background .15s
+    }
+
+    .rv-star:hover {
+      transform: translateY(-1px);
+      background: var(--bg2)
+    }
+
+    .rv-star svg {
+      width: 22px;
+      height: 22px;
+      display: block
+    }
+
+    .faq .qa {
+      border-radius: 16px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: var(--card);
+      box-shadow: var(--sh-sm);
+      border: 1px solid var(--line)
+    }
+
+    .faq .q {
+      padding: 19px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 16px
+    }
+
+    .faq .q .pm {
+      font-size: 24px;
+      color: var(--green);
+      transition: .2s
+    }
+
+    .faq .a {
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+      color: var(--muted)
+    }
+
+    .faq .qa.open .a {
+      max-height: 200px
+    }
+
+    .faq .qa.open .pm {
+      transform: rotate(45deg)
+    }
+
+    .faq .a p {
+      padding: 0 22px 19px
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--card);
+      padding: 50px 0 26px
+    }
+
+    .fgrid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 34px
+    }
+
+    footer p.ab {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 280px;
+      margin-top: 14px
+    }
+
+    footer h5 {
+      font-family: 'Outfit';
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 14px
+    }
+
+    footer ul {
+      list-style: none;
+      display: grid;
+      gap: 9px
+    }
+
+    footer ul a {
+      color: var(--muted);
+      font-size: 14px;
+      cursor: pointer
+    }
+
+    footer ul a:hover {
+      color: var(--green)
+    }
+
+    .fbot {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      color: var(--faint);
+      font-size: 13px
+    }
+
+    @media(max-width:900px) {
+
+      .svc-img { order: -1 !important; }
+      .dgrid { grid-template-columns: 1fr !important; }
+      .svc-bullets { grid-template-columns: 1fr !important; }
+      .contact-grid { grid-template-columns: 1fr !important; }
+
+      .links,
+      .nav>.btn {
+        display: none
+      }
+
+      .burger {
+        display: block
+      }
+
+      .hgrid,
+      .cgrid,
+      .dgrid,
+      .tgrid,
+      .packgrid,
+      .protop,
+      .steps,
+      .args,
+      .listcols,
+      .vol,
+      .fgrid {
+        grid-template-columns: 1fr
+      }
+
+      .steps,
+      .args {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .greenband,
+      .band,
+      .proband {
+        padding: 30px 24px
+      }
+
+      .mobile-open .links {
+        display: flex;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg);
+        padding: 14px;
+        border-bottom: 1px solid var(--line)
+      }
+
+      /* Hero */
+      .hero {
+        padding: 36px 0 28px
+      }
+
+      .hero-ph {
+        display: none
+      }
+
+      .float {
+        display: none
+      }
+
+      .hero p.lead {
+        font-size: 16px;
+        max-width: 100%
+      }
+
+      /* Sections */
+      section.blk {
+        padding: 48px 0
+      }
+
+      /* Logo */
+      .logo img {
+        margin-left: 0 !important;
+        width: 120px !important
+      }
+
+      /* Tarifs tabs */
+      .seg {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch
+      }
+
+      .seg button {
+        padding: 9px 13px;
+        font-size: 13px;
+        white-space: nowrap;
+        flex-shrink: 0
+      }
+
+      /* Avis scroll */
+      .tscroll .tcard {
+        width: 280px
+      }
+
+      .reviews-scroll {
+        max-height: 360px
+      }
+
+      /* Formulaire contact */
+      .formcard {
+        padding: 22px 16px
+      }
+
+      .two {
+        grid-template-columns: 1fr
+      }
+
+      /* Pack grid tablette : 2 colonnes */
+      .packgrid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      /* Band CTA */
+      .band {
+        padding: 26px 22px;
+        flex-direction: column;
+        text-align: center
+      }
+
+      .band .btn {
+        width: 100%;
+        justify-content: center
+      }
+    }
+
+    @media(max-width:480px) {
+      .wrap {
+        padding: 0 20px
+      }
+
+      .hero p.lead {
+        font-size: 15px
+      }
+
+      .packgrid,
+      .steps,
+      .args {
+        grid-template-columns: 1fr
+      }
+
+      .fgrid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .tscroll .tcard {
+        width: 240px
+      }
+
+      .reviews-scroll {
+        max-height: 320px
+      }
+
+      .formcard {
+        padding: 18px 14px
+      }
+
+      .seg button {
+        padding: 8px 11px;
+        font-size: 12px
+      }
+
+      section.blk {
+        padding: 36px 0
+      }
+
+      .greenband {
+        padding: 24px 18px
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        padding: 6px 12px
+      }
+
+      .chip {
+        font-size: 12.5px;
+        padding: 8px 13px
+      }
+    }
+
+    /* ---- Cartes voiture repensées ---- */
+    .car-includes {
+      list-style: none;
+      margin: 10px 0 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .car-includes li {
+      font-size: 13.5px;
+      color: var(--muted);
+      display: flex;
+      gap: 7px;
+      align-items: flex-start
+    }
+
+    .car-includes li::before {
+      content: "✓";
+      color: var(--sky);
+      font-weight: 700;
+      flex-shrink: 0
+    }
+
+    .car-from {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--sky);
+      margin: 12px 0 14px;
+      margin-top: auto
+    }
+
+    .car-pick-btn {
+      width: 100%;
+      background: var(--sky);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 11px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .2s
+    }
+
+    .car-pick-btn:hover {
+      opacity: .88
+    }
+
+    .car-picker {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line)
+    }
+
+    .pick-label {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 9px
+    }
+
+    .vtype-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px
+    }
+
+    .vtype-btn {
+      padding: 10px 8px;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      background: var(--card);
+      cursor: pointer;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      font-size: 12.5px;
+      text-align: center;
+      color: var(--ink);
+      transition: border-color .15s, background .15s
+    }
+
+    .vtype-btn.sel {
+      border-color: var(--sky);
+      background: var(--sky-l);
+      color: var(--sky)
+    }
+
+    .vtype-btn b {
+      display: block;
+      font-size: 15px;
+      margin-top: 3px
+    }
+
+    .supp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px
+    }
+
+    .supp {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13.5px;
+      cursor: pointer;
+      color: var(--ink)
+    }
+
+    .supp input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--sky);
+      cursor: pointer;
+      flex-shrink: 0
+    }
+
+    .supp b {
+      color: var(--sky);
+      font-weight: 600;
+      margin-left: auto
+    }
+
+    .car-reserve-btn {
+      width: 100%;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity .2s
+    }
+
+    .car-reserve-btn:hover {
+      opacity: .88
+    }
+
+    .car-total-box {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--green-l);
+      border: 1.5px solid var(--mint);
+      border-radius: 10px;
+      padding: 11px 16px;
+      margin-bottom: 14px
+    }
+
+    .car-total-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted)
+    }
+
+    .car-total-num {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--green)
+    }
+
+    /* ---- Sélecteur à la carte (Maison / Jardin) ---- */
+    .plist .sli {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 20px;
+      border-bottom: 1px solid var(--line);
+      transition: background .15s
+    }
+
+    .plist .sli:last-child {
+      border-bottom: 0
+    }
+
+    .plist .sli.on {
+      background: var(--green-l)
+    }
+
+    .sli-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      min-width: 0
+    }
+
+    .sli-info span {
+      font-size: 14px;
+      color: var(--ink)
+    }
+
+    .sli-info b {
+      font-family: 'Outfit';
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--green)
+    }
+
+    .qty {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-shrink: 0
+    }
+
+    .qbtn {
+      width: 28px;
+      height: 28px;
+      border: 1.5px solid var(--line);
+      background: var(--card);
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      transition: border-color .15s, color .15s
+    }
+
+    .qbtn:hover {
+      border-color: var(--green);
+      color: var(--green)
+    }
+
+    .qval {
+      min-width: 18px;
+      text-align: center;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--ink)
+    }
+
+    .sel-bar {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--green-l);
+      border: 1.5px solid var(--mint);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-top: 18px;
+      flex-wrap: wrap
+    }
+
+    .sel-bar-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1px
+    }
+
+    .sel-bar-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .04em
+    }
+
+    .sel-bar-num {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--green)
+    }
+
+    .sel-bar-btn {
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 22px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity .2s
+    }
+
+    .sel-bar-btn:hover {
+      opacity: .88
+    }
+
+    /* ---- Encart "choisir une offre avant de réserver" ---- */
+    .no-offer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 14px;
+      min-height: 560px;
+      padding: 44px 28px;
+      background: var(--sky-l);
+      border: 2px dashed var(--sky);
+      border-radius: var(--r)
+    }
+
+    .no-offer .no-offer-ic {
+      width: 60px;
+      height: 60px;
+      color: var(--sky)
+    }
+
+    .no-offer h3 {
+      font-family: 'Outfit';
+      font-weight: 800;
+      font-size: 22px;
+      color: var(--ink)
+    }
+
+    .no-offer p {
+      max-width: 430px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5
+    }
+
+    /* ---- Bouton voir tous les avis ---- */
+    .voir-avis-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'Outfit';
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--green);
+      cursor: pointer;
+      border: 1.5px solid var(--green);
+      padding: 9px 20px;
+      border-radius: 30px;
+      transition: .18s;
+    }
+    .voir-avis-link:hover { background: var(--green); color: #fff; }
+    @media(max-width:900px) { .cgrid { grid-template-columns: 1fr !important; } }
+  </style>
+</head>
+
+<body>
+
+  <header id="top">
+    <div class="wrap nav">
+        <div class="logo" onclick="go('accueil')"><img src="4ab4e9ef-d22e-4840-9ccf-886ca4aa8234.png" alt="SB Clean"
+          style="width:140px;height:auto;margin-left:-12px"></div>
+      <nav class="links">
+        <a data-nav="accueil" class="on" onclick="go('accueil')">Accueil</a>
+        <a data-nav="services" onclick="go('services')">Services</a>
+        <a data-nav="tarifs" onclick="go('tarifs')">Tarifs</a>
+        <a data-nav="contact" onclick="go('contact')">Contact</a>
+        <a data-nav="avis" onclick="go('avis')">Avis</a>
+      </nav>
+      <button class="btn btn-pri big" onclick="go('contact')">Réserver maintenant</button>
+      <button class="burger" onclick="document.body.classList.toggle('mobile-open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page active" id="accueil">
+      <div class="wrap hero">
+        <div class="hgrid">
+          <div>
+            <span class="eyebrow">✦ Awans · Région de Liège</span>
+            <h1>La propreté <span class="accent">sans bouger de votre canapé</span></h1>
+            <p class="lead">Réservez votre créneau en 30 secondes, confirmation instantanée via Calendly.</p>
+            <div class="hcta">
+              <button class="btn btn-pri big" onclick="go('contact')">Choisir mon créneau →</button>
+              <button class="btn btn-ghost" onclick="go('services')">Découvrir les services</button>
+            </div>
+            <div class="chips">
+              <span class="chip"><span class="tk">✓</span> Photos avant/après</span>
+              <span class="chip"><span class="tk">✓</span> Agenda confirmé instantanément</span>
+            </div>
+          </div>
+          <div style="position:relative">
+            <div class="hero-ph" style="border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)"><img src="https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?w=800" alt="Canapé nettoyé par SB Clean" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            <div class="float a">
+              <div class="ic" id="f1"></div>
+              <div><small>Note clients</small><b>4.9 / 5</b></div>
+            </div>
+            <div class="float b">
+              <div class="ic" id="f2"></div>
+              <div><small>Réponse</small><b>Sous 24h</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page" id="services"></section>
+    <section class="page" id="tarifs"></section>
+    <section class="page" id="contact"></section>
+    <section class="page" id="avis"></section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fgrid">
+        <div>
+            <div class="logo"><img src="4ab4e9ef-d22e-4840-9ccf-886ca4aa8234.png" alt="SB Clean"
+              style="width:130px;height:auto"></div>
+          <p class="ab">Nettoyage et entretien mobile à domicile. Auto, maison et jardin dans la région de Liège.</p>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a onclick="go('services')">Detailing auto</a></li>
+            <li><a onclick="go('services')">Entretien maison</a></li>
+            <li><a onclick="go('services')">Entretien jardin</a></li>
+            <li><a onclick="go('tarifs')">Tarifs & packs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Entreprise</h5>
+          <ul>
+            <li><a onclick="go('accueil')">À propos</a></li>
+            <li><a onclick="go('tarifs')">Offres pro</a></li>
+            <li><a onclick="go('contact')">Réserver maintenant</a></li>
+            <li><a onclick="go('avis')">Avis clients</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul id="fContact"></ul>
+        </div>
+      </div>
+      <div class="fbot"><span>© 2026 SB Clean · Awans</span><span>Zéro effort, résultat garanti</span></div>
+    </div>
+  </footer>
+
+  <script src="sbclean-data.js"></script>
+  <script src="sbclean-ui.js"></script>
+  <script src="sbclean-booking.js"></script>
+  <script src="sbclean-reviews.js"></script>
+  <script src="sbclean-pages.js"></script>
+  <script src="sbclean-app.js"></script>
+
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <!-- ===== Tweaks panel ===== -->
+  <div id="tweaks-root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+    integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+    integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+    integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+    crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="tweaks-app.jsx"></script>
+</body>
+
+</html>
